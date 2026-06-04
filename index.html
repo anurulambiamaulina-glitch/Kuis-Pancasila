@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Edukasi Pancasila</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #d32f2f;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    /* Layout Utama menggunakan Flexbox */
+    .main-container {
+      display: flex;
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 20px;
+      gap: 20px;
+    }
+    /* Area Sidebar (Kiri) */
+    .sidebar {
+      flex: 1;
+      min-width: 320px; /* Memastikan lebar sidebar pas untuk kuis */
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 20px; /* Sidebar ikut bergerak saat di-scroll */
+    }
+    .sidebar h3 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #333;
+      border-bottom: 2px solid #d32f2f;
+      padding-bottom: 5px;
+    }
+    /* Styling untuk embed Kuis */
+    .quiz-iframe {
+      width: 100%;
+      height: 600px; /* Sesuaikan tinggi kuis Anda */
+      border: none;
+      border-radius: 5px;
+    }
+    /* Area Konten Utama (Kanan) */
+    .content {
+      flex: 3;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .content h2 {
+      color: #d32f2f;
+      margin-bottom: 15px;
+    }
+    .content p {
+      margin-bottom: 15px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+      margin-top: 40px;
+    }
+    /* Responsif untuk HP */
+    @media (max-width: 768px) {
+      .main-container {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portal Belajar Civics</h1>
+    <p>Media Pembelajaran Pancasila & Kewarganegaraan</p>
+  </header>
+
+ 
+
+  <footer>
+    <p>&copy; 2026 Portal Belajar Civics. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
